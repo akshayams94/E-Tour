@@ -1,0 +1,16 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,930,0.7),rgba(4,930,0.7)), url(Project\pictures);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    ul li{
+       list-style: none;
+       display: inline block
+    }
+}

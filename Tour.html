@@ -6,42 +6,119 @@
     <link rel="stylesheet" href="exp cards style.css" />
     <title>Expanding Cards</title>
      </head>
-  <body background="wor.jpg">
-  <div class="home" ><a href="" >Home</a></div>
-  <div class="contact"><a href="https://www.eventim.de/helpcenter/en/">Contact</a></div>
-  <div class="ticket" ><a href="https://www.ticket-travelcenter-fuessen.com/tickets/">Tickets</a></div>
-
-    <h1>Welcome to E-Tour Website</h1>
+  <body>
+  <div><a href="" >Home</a></div>
+  <div><a href="https://www.eventim.de/helpcenter/en/">Contact</a></div>
+  <div><a href="https://www.ticket-travelcenter-fuessen.com/tickets/">Tickets</a></div>
+  <div class="icon"><img src="fli icon.png" alt="fly" style="float: left;"></div>
+    <h1>Welcome to Travel Website</h1>
     <h3 style="text-align:center">Explore the World</h3>
 
    <div align=center><audio controls><source src="airplane-fly-by-01a.mp3" type="audio/mp3">music</audio></div>
+   <!----------------Uploaded flags and information image------------------>
    <div> 
     <header>
     <ul>
     <section>
     <nav>
-    <button class="b1"><a href="India tour.png" ><img src="India flag.gif"  width="250", height="250"></a></button>
+    <button class="b1"><a href="India tour.png"><img src="India flag.gif"  width="250", height="250""></a></button>
     <button class="b2"><a href="America tour.png"><img src="Usa flag.gif" width="250", height="250"></a></button>
     <button class="b3"><a href="German tour.png"><img src="germany flag.gif" width="250", height="250"></a></button>
     <button class="b4"><a href="Canada tour.png"><img src="Canada flag.gif" width="250" height="250"></a></button>
     <button class="b5"><a href="Sweden tour.png"><img src="sweden.gif" width="250", height="250"></a></button>
-    
-    
     </nav>
     </section>
     </ul>
     </header>
     </div>
       
-    <div class="explore"> 
-  
-      <video width="320" height="240" controls>
-        <source src="final_61b7fbce0e25e0008f83c90f_475190.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <div id="outside">
+      <form id="survey-form" action="/my-handling-form-page" method="post">
+        <h1 id="title">Application for reserve the ticket</h1>
+        
+        
+        <!-- ------------------Personal Details---------------------------- -->
+        <fieldset>
+          <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+          <legend>Personal Details</legend>
+          <!-- formally describes the purpose of the fieldset it is included inside. -->
+          <div>
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+          <div>
+            <label for="address-label">Address:</label>
+            <input type="Address" id="address" name="Address" placeholder="Enter address here">   </div>
+          <div>
+            <label id="email-label" for="Email">Email:</label>
+            <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+          <div>
+            <label id="number-label" for="phone">Phone Number:</label>
+            <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number" min="1" max="9">  </div>
+          <div>
+            <label id="iq-label" for="iq">IQ:</label>
+            <input type="number" id="iq" name="iq" placeholder="Enter IQ here">   </div>
       
-     </div>
-
-
-  </body>
+          <!-- ------------------Radio Buttons-------------------------------- -->
+          <div>
+            <label for="Gender">Gender</label>
+            <p>
+              <input type="radio" name="gender" value="male" checked> Male<br>
+              <input type="radio" name="gender" value="female"> Female<br>
+              <input type="radio" name="gender" value="other"> Other
+            </p>
+          </div>
+      
+        </fieldset>
+        <!-- ------------------Checkboxes-------------------------------- -->
+        <fieldset>
+          <label for="Gender">Check All That Apply</label>
+          <p>
+            <input type="checkbox" name="tattoo" value="tattoo"> I have a valid passport<br>
+            <input type="checkbox" name="age" value="Car"> I am vaccinated and recovered from COVID <br>
+            <input type="checkbox" name="car" value="car">Travel with FFP-2 Mask"<br>
+            
+          </p>
+        </fieldset>
+        
+        <!-- -----------------Dropdown menus--------------------------------- -->
+        
+        <fieldset>
+          <div>
+            <label for="Land">Country</label>
+            <select id="dropdown">
+        <option value="India">India</option>
+        <option value="America">America</option>
+        <option value="Canada">Canada</option>
+        <option value="Germany">Germany</option>
+        <option value="Sweden">Sweden</option>
+        </select>
+      
+            <label for="Airline">Airlines</label>
+            <select id="dropdown2">
+        <option value="Luf">Lufthansa</option>
+        <option value="Emi">Fly Emirates</option>
+        <option value="Ethi">Ethihads</option>  
+        <option value="Klm">KLM</option> 
+    
+        
+        </select>
+          </div>
+        </fieldset>
+      
+        <!-- --------------------Text Areas------------------------------ -->
+        
+        <fieldset>
+          <legend>Comments</legend>
+          <div>
+            <label for="msg">Leave your Comments here</label><br>
+            <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+      
+        </fieldset>
+      
+        <div id="submitbutton">
+          <button type="submit" id="submit">Send your application</button>   </div>
+      
+      </form>
+    </body>
+    
 </html>

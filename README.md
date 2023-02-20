@@ -1,7 +1,7 @@
 # World-Tour
 About the Project
 
-This is a small website and beginner level project about booking the ticket for travel all over the world.
+This is a small website and beginner level project about reserving tickets for travel all over the world.
 
 # Built with
 
